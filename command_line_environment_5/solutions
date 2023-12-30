@@ -1,0 +1,22 @@
+**Jobs**
+1. 
+```
+sleep 10000
+bg
+pgrep -af sleep
+pkill -f sleep
+```
+
+2.
+`sleep 60 & wait $! ; ls`
+`./pidwait.sh asdf`
+
+**Terminal Multiplexer**
+Tutorial, skipped
+
+**Aliases**
+1. `alias dc="cd"`
+2. Ok
+
+**Dotfiles**
+

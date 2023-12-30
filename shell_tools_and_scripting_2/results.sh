@@ -19,5 +19,3 @@ done
 echo "Script failed after $run_count runs"
 echo "Combined output from all runs:"
 echo "$combined_output"
-
-find "$(pwd)" -type f -name "*.html" | xargs zip html_files.zip

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+pidwait () {
+	
+	pid=$1
+	if [[ -z "$pid" ]]; then
+		echo "Please provide a PID argument"
+		return 1
+	fi
+
+	while kill - 0 "$pid" > /dev/null 2>&1; do
+		sleep 1
+	done
+
+	echo "Process with PID $pid has completed."
+	return 0
+}
